@@ -27,9 +27,12 @@ could declare in two or one line:
 var i int
 i = 42
 ```
-
 or
-
 ```bash
-1 := 42
+var i int = 42
 ```
+or leave go to set init/float/string..
+```bash
+i := 42
+```
+
