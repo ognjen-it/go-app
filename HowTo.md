@@ -17,7 +17,7 @@ go to the folder where you want to initialize your go app and do next command:
 4. Declaring Variables:
 could declare in two or one line:
 
-<code> var i int
+<code> var i int <br>
 i = 42 <code>
 
 or
