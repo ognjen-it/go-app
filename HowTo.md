@@ -36,6 +36,8 @@ or leave go to set init/float/string..
 i := 42
 ```
 
+Const is similar as variable but cannot be reassigned and must be declared in compiling time/
+
 The const cannot be reassign, for example:
 ```go
 const pi = 3.1415
