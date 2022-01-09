@@ -62,8 +62,20 @@ const (
 	third   // here you can see that third inherit last defined const
 )
 
-fmt.Println(2 << first)
-fmt.Println(2 << second)
-fmt.Println(2 << third)
+fmt.Println(first, second, third)
+```
+
+But, if we set new const, then it will be reset:
+```go
+const (
+	first = iota
+	second
+)
+const (
+	third = iota
+	fourth
+)
+
+fmt.Println(first, second, third, fourth)
 
 ```
