@@ -23,16 +23,45 @@ go mod init github.com/ognjen-it/go-app
 4. Declaring Variables:
 could declare in two or one line:
 
-```bash
+```go
 var i int
 i = 42
 ```
 or
-```bash
+```go
 var i int = 42
 ```
 or leave go to set init/float/string..
-```bash
+```go
 i := 42
 ```
 
+The const cannot be reassign, for example:
+```go
+const pi = 3.1415
+fmt.Println(pi)
+pi = 1.2
+```
+
+With const we can set multi const:
+```go
+const (
+    first = 1
+    second = "second"
+)
+```
+
+iota - every time we use it then it increases exponentially. For example:
+
+```go
+const (
+	first = iota
+	second = iota
+	third   // here you can see that third inherit last defined const
+)
+
+fmt.Println(2 << first)
+fmt.Println(2 << second)
+fmt.Println(2 << third)
+
+```

@@ -2,23 +2,16 @@ package main
 
 import "fmt"
 
+const (
+	first = iota
+	second
+	thread
+	fourth
+)
+
 func main() {
-	var i int
-	i = 42
-	fmt.Println(i)
-
-	var f float32 = 3.14
-	fmt.Println(f)
-
-	firstName := "Ognjen"
-	fmt.Println(firstName)
-
-	b := true
-	fmt.Println(b)
-
-	c := complex(3, 4)
-	fmt.Println(c)
-
-	r, im := real(c), imag(c)
-	fmt.Println(r, im)
+	fmt.Println(2 << first)
+	fmt.Println(2 << second)
+	fmt.Println(2 << thread)
+	fmt.Println(2 << fourth)
 }
