@@ -1,17 +1,11 @@
+/*
+Copyright © 2022 NAME HERE <EMAIL ADDRESS>
+
+*/
 package main
 
-import "fmt"
-
-const (
-	first = iota
-	second
-	thread
-	fourth
-)
+import "github.com/ognjen-it/go-app/cmd"
 
 func main() {
-	fmt.Println(2 << first)
-	fmt.Println(2 << second)
-	fmt.Println(2 << thread)
-	fmt.Println(2 << fourth)
+	cmd.Execute()
 }
